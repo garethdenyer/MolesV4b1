@@ -22,7 +22,7 @@
       <div id="unity-footer">
         <div id="unity-webgl-logo"></div>
         <div id="unity-fullscreen-button"></div>
-        <div id="unity-build-title">Liquid Handling</div>
+        <div id="unity-build-title">Probably better in Full Screen</div>
       </div>
     </div>
     <script>
@@ -74,5 +74,14 @@
       };
       document.body.appendChild(script);
     </script>
+   <script>
+function CopyToClipboard(arg){
+var tempInput = document.createElement("textarea");
+tempInput.value = arg;
+document.body.appendChild(tempInput);
+tempInput.select();
+document.execCommand("copy");
+document.body.removeChild(tempInput); }
+</script> 
   </body>
 </html>
